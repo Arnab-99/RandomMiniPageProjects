@@ -1,0 +1,40 @@
+.site-header{
+    background-color: black;
+    text-align: center;
+    color: cyan;
+    height: 60px;
+    font-family: monospace;
+    display: flex;
+    font-size: 30;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+.site-section-1{
+    background-color: cadetblue;
+    color: inherit;
+    height: 100vh;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-pic{
+    border-radius: 50%;
+    width: 300px;
+    align-self: center;
+    box-shadow: black 10px 10px 5px ;
+}
+
+.site-header-contents{
+    margin: 10px;
+
+}
+
+
+body{
+    margin: 0;
+}

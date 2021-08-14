@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Arnab Ghosh </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="cadetblue">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="parallex">
+            <img src="Images/bg.jpg" id="bg">
+            <img src="Images/moon.png" id="moon">
+            <img src="Images/mountain.png" id="mountain">
+            <img src="Images/road.png" id="road">
+            <h2 class="text" id="text">Blog</h2>
+        </section>
+        
+        <script type="text/javascript">
+            let bg = document.getElementById("bg");
+            let moon = document.getElementById("moon");
+            let mountain = document.getElementById("mountain");
+            let road = document.getElementById("road");
+            let text = document.getElementById("text");
+
+            window.addEventListener('scroll',function(){
+                var value = window.scrollY;
+                bg.style.top = value * 0.5 +'px';
+                moon.style.left = -value * 0.5 +'px';
+                mountain.style.top = -value * 0.15 +'px';
+                road.style.top = value * 0.15 +'px';
+                text.style.top = value * 1 +'px';
+            })
+        </script>
+    </body>
+</html>

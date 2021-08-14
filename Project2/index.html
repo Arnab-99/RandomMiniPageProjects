@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Arnab Ghosh </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+        </style>
+        <link href="style/style.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <section class="banner" id="sec">
+            <header>
+                <a href="#" class="logo">Logo</a>
+                <div id="toggle" onclick="toggle()"></div>
+            </header>
+            <div class="content">
+               <h2>Hi Everyone! <br>I'm 
+                <span>Arnab Ghosh</span>
+                <p>I am 22 years old. I live in Kolkata, India
+                    I am learning full stack web development. Watch this space for my upcoming projects
+                    And if you want to learn with me you can join me in my course.
+                </p>
+            </div>
+            <ul class="sci">
+                <li><a href="https://github.com/Arnab-99" ><img src="Images/github2.png"></a></li>
+                <li><a href="https://twitter.com/99Arnab"><img src="Images/twitter.png"></a></li>
+                <li><a href="https://www.linkedin.com/in/ghosh-arnab/"><img src="Images/linkedin.png"></a></li>
+            </ul>
+        </section>
+        <div id="navigation">
+            <ul>
+                <li><a href="#" onclick="toggle()">Home</a></li>
+                <li><a href="#" onclick="toggle()">About Me</a></li>
+                <li><a href="#SkillsBox" onclick="toggle()">Skills</a></li>
+                <li><a href="#" onclick="toggle()">Contact</a></li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            function toggle(){
+               var sec = document.getElementById('sec');
+               var nav = document.getElementById('navigation');
+                sec.classList.toggle('activate');
+                nav.classList.toggle('activate');
+
+           }
+        </script>
+    </body>
+</html>

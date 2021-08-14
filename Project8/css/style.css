@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background: #000;
+}
+header{
+    position:relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 40px 100px;
+    background-color: #131313;
+}
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+header nav a{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url(../Images/bg.jpg);
+    background-size: 100%;
+}
+.container .heading{
+    position: relative;
+    max-width: 100%;
+    max-height: 30vh;
+
+}
+.translator-section{
+    width:100% ;
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+.translator-box{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.translator-box textarea{
+    height: 20vh;
+    width: 70vh;
+    padding: 10px 20px 5px;
+    border: #fff;
+    color: #000;
+    resize: none;
+    font-weight: 700;
+    font-size: 0.6em;
+}
+
+
+/* botam */
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn-container a{
+    position: relative;
+    width: 160px;
+    height: 60px;
+    display: inline-block;
+    background: #fff;
+    margin: 20px;
+}
+.btn-container .btn{
+    position: relative;
+    width: 160px;
+    height: 60px;
+    display: inline-block;
+    background: #fff;
+    margin: 20px;
+}
+.btn-container a::before,
+.btn-container a::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #f00;
+    transition: 0.5s;
+}
+.btn-container .btn::before,
+.btn-container .btn::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #f00;
+    transition: 0.5s;
+}
+.btn-container a:hover::before{
+    inset: -3;
+}
+.btn-container a:hover::after{
+    inset: -3;
+    filter: blur(10px);
+}
+.btn-container a:nth-child(1):before,
+.btn-container a:nth-child(1):after
+{
+    background: linear-gradient(45deg,#00ccff,#0e1538,#d400d4);
+}
+
+.btn-container a span{
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: #0e1538;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    border: 1px solid #0e1538;
+}
+
+
+
+footer{
+    position: relative;
+    margin: 20px;
+    padding: 10px;
+    max-height: 50px;
+    background-color: #131313;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.sci{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    margin: 0 10px 0;
+}
+.sci li a img{
+    max-width: 20px;
+    filter: invert(1);
+    mix-blend-mode: difference;
+
+}
+.sci li a:hover{
+    background: #fff;
+}
